@@ -1,22 +1,26 @@
 # Install ibm-la
 
-Step-1 : Run the script la_inst_prereq.sh ( this will configure the server with pre-reqs, packages)
-Step-2 : Reboot the server
-Step-3 : cd /tmp; wget LA.tar.gz
-Step-4 : Install primary LA server 
-`
-./install_primary_la.sh
-`
+- STEP1: Type some Markdown on the left
+- See HTML in the right
+- ✨Magic ✨
 
-`
+- Step-1 : Run the script la_inst_prereq.sh ( this will configure the server with pre-reqs, packages)
+- Step-2 : Reboot the server
+- Step-3 : cd /tmp; wget LA.tar.gz
+- Step-4 : Install primary LA server 
+```
+./install_primary_la.sh
+```
+
+```
 Required
 /tmp/LA.tar.gz
 silent_install_nologfile_nosolr.xml
 
-`
+```
 
-Step-5 : Optional - For installing the Index Servr
-`
+- Step-5 : Optional - For installing the Index Servr
+```
 cd /opt/ibm/LogAnalysis/solr_install_tool
 ./remote_deploy_solr.sh -install
 
@@ -32,4 +36,4 @@ Apache Solr Query Service Port: To use the default value, 7205, press enter. To
 
 Results
 The results of the installation are output in the log file in the <HOME>/IBM/LogAnalysis/solr_install_tool/logs/ManageSolrnodes log file.
-`
+```
